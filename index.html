@@ -31,9 +31,12 @@
         <h1>
 <a name="nfsdb" class="anchor" href="#nfsdb"><span class="octicon octicon-link"></span></a>NFSdb</h1>
 
-<p>NFSdb is a low latency, high throughput time-series database written entirely in Java. The goal of the project is a study of what's possible to do in java with large datasets. And I would like to share benefits of this study with everybody.</p>
+<p>NFSdb is a low latency, high throughput time-series database written entirely in Java. The goal of the project is a study of what's possible to do in java with large datasets. And we would like to share benefits of this study with everybody.</p>
 
-<p>NFSdb requires minimum of Java 7 and you can get it from maven Central:</p>
+<h3>
+<a name="maven" class="anchor" href="#maven"><span class="octicon octicon-link"></span></a>Maven</h3>
+
+<p>NFSdb requires minimum of Java 7 and stable release is available from maven Central:</p>
 
 <div class="highlight highlight-xml"><pre>        <span class="nt">&lt;dependency&gt;</span>
             <span class="nt">&lt;groupId&gt;</span>com.nfsdb<span class="nt">&lt;/groupId&gt;</span>
@@ -43,11 +46,27 @@
 
 </pre></div>
 
-<p>You can find usage example code in <a href="https://github.com/bluestreak01/nfsdb/tree/master/nfsdb-samples">nfsdb-samples</a> repository.</p>
+<h3>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h3>
+
+<p>To help you getting started we have created code examples in <a href="https://github.com/bluestreak01/nfsdb/tree/master/nfsdb-samples">nfsdb-samples</a> repository.</p>
 
 <p>Alternatively there is quick start guide on github <a href="https://github.com/bluestreak01/nfsdb/wiki">wiki</a></p>
 
-<p>NFSdb project is being actively supported and there will be more examples available in the next couple of days.</p>
+<h3>
+<a name="performance" class="anchor" href="#performance"><span class="octicon octicon-link"></span></a>Performance</h3>
+
+<p>On test rig (Intel i7-920 @ 4Ghz) NFSdb shows average read latency of 20-30ns and write latency of 60ns per column of data. Read and write do not have any GC overhead.</p>
+
+<h3>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>NFSdb is available under <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0 License</a></p>
+
+<h3>
+<a name="support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h3>
+
+<p>NFSdb project is being actively developed and supported. You can raise and <a href="https://github.com/bluestreak01/nfsdb/issues">Issue</a> on github or join our <a href="https://groups.google.com/forum/#!forum/nfsdb">google group</a></p>
 
 <p>10 May 2014.</p>
       </section>
