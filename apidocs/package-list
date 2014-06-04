@@ -1,0 +1,17 @@
+com.nfsdb.journal
+com.nfsdb.journal.collections
+com.nfsdb.journal.column
+com.nfsdb.journal.concurrent
+com.nfsdb.journal.exceptions
+com.nfsdb.journal.factory
+com.nfsdb.journal.iterators
+com.nfsdb.journal.locks
+com.nfsdb.journal.logging
+com.nfsdb.journal.map
+com.nfsdb.journal.printer
+com.nfsdb.journal.printer.appender
+com.nfsdb.journal.printer.converter
+com.nfsdb.journal.query.api
+com.nfsdb.journal.query.spi
+com.nfsdb.journal.tx
+com.nfsdb.journal.utils
