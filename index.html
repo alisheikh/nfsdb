@@ -33,9 +33,10 @@
         <p><a href="http://travis-ci.org/NFSdb/nfsdb"><img src="https://secure.travis-ci.org/NFSdb/nfsdb.png?branch=master" alt="Build Status"></a></p>
 
 <h1>
-<a name="nfsdb" class="anchor" href="#nfsdb"><span class="octicon octicon-link"></span></a>NFSdb</h1>
+<a name="nfsdb-wwwnfsdborg" class="anchor" href="#nfsdb-wwwnfsdborg"><span class="octicon octicon-link"></span></a>NFSdb (<a href="http://www.nfsdb.org">www.nfsdb.org</a>)</h1>
 
-<p>NFSdb is a low latency, high throughput time-series database written entirely in Java. The goal of the project is a study of what's possible to do in java with large datasets. And we would like to share benefits of this study with everybody.</p>
+<p>NFSdb is a low latency, high throughput time-series database written entirely in Java. We use memory-mapped files to bring you fully persisted database with performance characteristics of in-memory cache.
+The goal of this project is to make the fastest and most developer friendly database in the world.</p>
 
 <h3>
 <a name="maven" class="anchor" href="#maven"><span class="octicon octicon-link"></span></a>Maven</h3>
@@ -53,9 +54,11 @@
 <h3>
 <a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h3>
 
-<p>To help you getting started we have created code examples in <a href="https://github.com/NFSdb/nfsdb/tree/master/nfsdb-samples">nfsdb-samples</a> repository.</p>
+<p>Check out our <a href="http://www.nfsdb.org/quick-start/">Quick-Start Guide</a></p>
 
-<p>Alternatively there is quick start guide on github <a href="https://github.com/NFSdb/nfsdb/wiki">wiki</a></p>
+<p>We also have a growing collection of examples:</p>
+
+<p><a href="https://github.com/NFSdb/nfsdb/tree/master/nfsdb-samples">nfsdb-samples</a> repository.</p>
 
 <h3>
 <a name="performance" class="anchor" href="#performance"><span class="octicon octicon-link"></span></a>Performance</h3>
@@ -73,6 +76,18 @@
 <p>NFSdb project is being actively developed and supported. You can raise and <a href="https://github.com/bluestreak01/nfsdb/issues">Issue</a> on github or join our <a href="https://groups.google.com/forum/#!forum/nfsdb">google group</a></p>
 
 <p>Please visit our official web site <a href="http://nfsdb.org">www.nfsdb.org</a>.</p>
+
+<h3>
+<a name="upcoming-release-change-log" class="anchor" href="#upcoming-release-change-log"><span class="octicon octicon-link"></span></a>Upcoming release Change Log</h3>
+
+<ul>
+<li>thrift support is optional. NFSdb works well with POJOs.</li>
+<li>durable transaction support (JournalWriter.commitDurable())</li>
+<li>Journal.select() to chose active columns. This saves a lot of unnecessary disk reading.</li>
+<li>Queries for invalid symbols return empty result set instead of throwing exceptions</li>
+<li>Maven: can assemble .zip file from nfsdb-core.</li>
+<li>5% performance improvement</li>
+</ul>
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
